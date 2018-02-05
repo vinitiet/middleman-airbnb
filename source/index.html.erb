@@ -1,15 +1,16 @@
 ---
 title: Le Wagon - Middleman
 ---
+<%= partial "layouts/banner" %>   <!-- inject layouts/_navbar.html.erb -->
 
-<div id="home">
-  <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
-    <p>
-      Middleman is now running!
-    </p>
-    <p class="about">
-      <%= link_to "More about this template", "about.html" %>
-    </p>
-  </div>
-</div>
+
+<%= partial "layouts/cards" %>   <!-- inject layouts/_navbar.html.erb -->
+
+<p class="about">
+  <%= link_to "More about this template", "about.html", class: "btn btn-danger" %>
+</p>
+
+<p class="team">
+  <%= link_to "Meet the team", "team.html", class: "btn btn-primary" %>
+</p>
+
